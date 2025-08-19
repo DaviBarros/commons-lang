@@ -498,10 +498,10 @@ public class ClassUtils {
         } else if (!className.isEmpty()) {
             className = REVERSE_ABBREVIATION_MAP.get(className.substring(0, 1));
         }
-        final StringBuilder canonicalClassNameBuffer = new StringBuilder(className.length() + dim * 2);
-        canonicalClassNameBuffer.append(className);
-        for (int i = 0; i < dim; i++) {
-            canonicalClassNameBuffer.append("[]");
+        final StringBuilder canonicalNameBuilder = new StringBuilder();
+        canonicalNameBuilder.append(baseType);
+        for (int i = 0; i < arrayDim; i++) {
+            canonicalNameBuilder.append("[]");
         }
         return canonicalClassNameBuffer.toString();
     }
