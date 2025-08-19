@@ -503,7 +503,7 @@ public class ClassUtils {
         for (int i = 0; i < dim; i++) {
             canonicalClassNameBuffer.append("[]");
         }
-        return canonicalClassNameBuffer.toString();
+        return canonicalNameBuilder.toString();
     }
 
     /**
