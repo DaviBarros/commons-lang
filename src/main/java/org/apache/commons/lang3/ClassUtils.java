@@ -503,7 +503,7 @@ public class ClassUtils {
         for (int i = 0; i < arrayDim; i++) {
             canonicalNameBuilder.append("[]");
         }
-        return canonicalClassNameBuffer.toString();
+        return canonicalNameBuilder.toString();
     }
 
     /**
