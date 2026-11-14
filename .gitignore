@@ -21,3 +21,5 @@ site-content
 
 # jenv's version file
 .java-version
+config.bat
+node_modules
