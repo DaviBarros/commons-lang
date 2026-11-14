@@ -593,7 +593,7 @@ class ClassUtilsTest extends AbstractLangTest {
         assertThrows(RuntimeException.class, () -> ClassUtils.getShortCanonicalName("[];"));
         assertThrows(RuntimeException.class, () -> ClassUtils.getShortCanonicalName(" "));
         assertThrows(RuntimeException.class, () -> ClassUtils.getShortCanonicalName("[$"));
-        assertThrows(RuntimeException.class, () -> ClassUtils.getShortCanonicalName("[$a"));
+        assertThrows(RuntimeException.class, () -> ClassUtils.getShortCanonicalName("[]"));
     }
 
     @Test
